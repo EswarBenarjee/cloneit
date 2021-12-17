@@ -1,0 +1,146 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  padding-top: 20vh;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #6888b1;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+  color: white;
+}
+
+#home {
+  padding: 0 39vw;
+}
+
+.event-title {
+  font-size: 3rem;
+  margin: 1rem 0rem;
+}
+
+/* background: #dceac0; */
+
+/* Navbar */
+nav {
+  height: 5rem;
+  width: 100vw;
+  background-color: #6888b1;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/*Styling logo*/
+.logo {
+  margin: 0.3rem 1.5rem;
+  text-align: center;
+}
+
+.logo img {
+  height: 5rem;
+  width: 100%;
+}
+
+/*Styling Links*/
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0 10rem 0rem 0;
+  text-align: center;
+  padding: 0 0.7vw;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  margin: 0 0.7vw;
+  font-size: 1rem;
+}
+
+.nav-links li:hover {
+  transform: scale3d(1, 1, 1);
+}
+
+.nav-links li a:hover {
+  color: #000000;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+/* .nav-links li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #61dafb;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+  margin: 0 0 0 10%;
+} */
+.nav-links li a:hover::before {
+  width: 80%;
+}
+
+/* EVENTS */
+#events h3 {
+  font-size: 2rem;
+}
+
+/* COLUMN DIVISON */
+.col-3 {
+  display: inline;
+  margin: 0 5vw;
+}
+
+/* EVENTS IS BACK */
+#events img {
+  height: 60vh;
+}
+
+
+
+
+
+
+/* BUTTON SHOW MORE */
+.show {
+  background: #6888b1;
+  background-image: -webkit-linear-gradient(top, #6888b1, #6888b1);
+  background-image: -moz-linear-gradient(top, #6888b1, #6888b1);
+  background-image: -ms-linear-gradient(top, #6888b1, #6888b1);
+  background-image: -o-linear-gradient(top, #6888b1, #6888b1);
+  background-image: linear-gradient(to bottom, #6888b1, #6888b1);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 6px 20px 6px 20px;
+  text-decoration: none;
+  border: 0;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+.show:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
