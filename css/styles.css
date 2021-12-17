@@ -272,12 +272,17 @@ nav {
     width:25%;
     margin-right: 12vw;
 }
+
 #footer p {
   margin: 0;
 }
 
 /* SVG */
+
 @media screen and (max-width: 800px) {
+  #rightbox {
+    font-size: 12px;
+  }
   .custom-shape-divider-top-1639472401 svg {
     width: 200%;
   }
@@ -305,6 +310,11 @@ nav {
   fill: #a86af8;
 }
 
+@media only screen and (max-width< 900px) {
+  #rightbox {
+    font-size: 5px;
+  }
+}
 /* BUTTON SHOW MORE */
 .show {
   background: #6888b1;
