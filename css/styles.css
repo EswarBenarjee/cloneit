@@ -2,10 +2,12 @@ body {
   box-sizing: border-box;
   padding: 0;
   padding-top: 20vh;
+  padding-bottom: 2vh;
   margin: 0;
   text-align: center;
   justify-content: center;
   align-items: center;
+  font-family: 'Readex Pro', sans-serif;
 }
 
 body {
@@ -17,7 +19,7 @@ body {
 }
 
 #home {
-  padding: 0 39vw;
+  padding: 0 35vw;
 }
 
 .event-title {
@@ -54,12 +56,11 @@ nav {
 .nav-links {
   display: flex;
   list-style: none;
-  margin: 0 10rem 0rem 0;
+  margin: 0 2rem 0rem 0;
   text-align: center;
   padding: 0 0.7vw;
   justify-content: space-evenly;
   align-items: center;
-  text-transform: uppercase;
 }
 
 .nav-links li a {
@@ -95,25 +96,214 @@ nav {
 }
 
 /* EVENTS */
+#events {
+  padding: 5vh 0;
+  background-color: #dceac0;
+}
 #events h3 {
   font-size: 2rem;
 }
-
+#events img {
+  width: 22.5vw;
+}
 /* COLUMN DIVISON */
+.row {
+  width: 100%;
+}
 .col-3 {
-  display: inline;
+  display: inline-block;
   margin: 0 5vw;
 }
 
-/* EVENTS IS BACK */
-#events img {
-  height: 60vh;
+@media only screen and (max-width<980px) {
+  .col-3 {
+    display: inline-block;
+    margin: 0 5vw;
+  }
+  /* EVENTS IS BACK */
+  #events img {
+    width: 23vw;
+  }
 }
 
+/* STATISTICS */
+#statistics {
+  padding: 5vh 0;
+}
+#statistics .number {
+  margin: 2vh 2vw;
+  height: 50px;
+  width: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: #6888b1;
+  position: relative;
+}
+#statistics .number span {
+  position: absolute;
+  top: 30%;
+  font-weight: bolder;
+}
+#statistics .number .ttt {
+  left: 25%;
+}
+#statistics .number .th {
+  left: 15%;
+}
+#statistics .number .ft {
+  left: 32%;
+}
+.col {
+  display: inline-block;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
 
+/* ABOUT */
+#about {
+  background-color: #ffffff;
+  color: #000000;
+  width: 100%;
+}
+#about .half {
+  position: relative;
+}
+#about img {
+  object-fit: fill;
+}
+#about .half .know {
+  position: absolute;
+  left: 43%;
+  bottom: 0%;
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 10px 24px 10px 24px;
+  text-decoration: none;
+  border: 0;
+}
+@media only screen and (max-width<980px) {
+  #about .half {
+    width: 100%;
+  }
+}
+#about .row {
+  margin-top: 5vh;
+}
+#about .col-5 {
+  display: inline-block;
+  width: 47%;
+  margin: 0;
+  position: relative;
+}
+#about .heading {
+  text-align: center;
+}
+#about h1 {
+  color: #6888b1;
+  position: relative;
+  bottom: 18vh;
+}
+#about .aboutUs {
+  position: absolute;
+  left: 40%;
+  bottom: 0%;
+  margin: 0;
+  padding: 10px 24px 10px 24px;
+}
+@media only screen and (max-width<980px) {
+  .col-5 {
+    display: inline-block;
+    margin: 0 5vw;
+  }
+}
 
+/* FOLLOW */
+#follow {
+  background-color: #dceac0;
+  padding: 5vh 12vw;
+  position: relative;
+}
+#follow span {
+  position: absolute;
+  top: 2%;
+  font-size: 5rem;
+  margin: 0;
+  height: 20px;
+}
 
+.fa {
+  padding: 10px;
+  font-size: 40px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background-color: #6888b1;
+  margin: auto 10px;
+  color: whitesmoke;
+}
+/* FOOTER */
+#footer {
+  text-align: left;
+  align-items: center;
+  padding: 5vh 10vw;
+}
+#footer li {
+  list-style: none;
+}
+#footer .row1 {
+  padding: auto 5vw;
+}
+#footer .row1 .col1 {
+  display: inline;
+  width: 26%;
+}
+#leftbox {
+  float: left;
+    width:25%;
+    margin-right: 12vw;
+}
+#middlebox{
+  float: left;
+    width:25%;
+    margin-right: 12vw;
+}
+#rightbox{
+    width:25%;
+    margin-right: 12vw;
+}
+#footer p {
+  margin: 0;
+}
 
+/* SVG */
+@media screen and (max-width: 800px) {
+  .custom-shape-divider-top-1639472401 svg {
+    width: 200%;
+  }
+  .custom-shape-divider-top-1639069243 svg {
+    height: 15vh;
+    width: 100%;
+  }
+}
+.custom-shape-divider-top-1639472401 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+.custom-shape-divider-top-1639472401 svg {
+  position: relative;
+  display: block;
+  width: calc(170% + 1.3px);
+  height: 180px;
+}
+.custom-shape-divider-top-1639472401 .shape-fill {
+  fill: #a86af8;
+}
 
 /* BUTTON SHOW MORE */
 .show {
@@ -126,7 +316,6 @@ nav {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
-  font-family: Courier New;
   color: #ffffff;
   font-size: 1rem;
   padding: 6px 20px 6px 20px;
